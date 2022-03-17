@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+$theme: 'dark-blue';
+
+$text-color: color;
+$primary-color: color;
+$secondary-color: color;
+$hover-link-color: color;
+$background-color: color;
+$nav-background-color: color;
+
+@if $theme == 'default' {
+    $text-color: black;
+    $primary-color: blue;
+    $secondary-color: #11ffff;
+    $hover-link-color: cyan;
+    $background-color: rgb(255, 247, 228);
+    $nav-background-color: #fff;
+} @else if $theme == 'dark-green' {
+    $text-color: #fff;
+    $primary-color: #6CFF4F;
+    $secondary-color: #718d53;
+    $hover-link-color: hsl(110, 100%, 90%);
+    $background-color: #333;
+    $nav-background-color: #444;
+} @else if $theme == 'dark-blue' {
+    $text-color: #fff;
+    $primary-color: #4fa1ff;
+    $secondary-color: #696297;
+    $hover-link-color: hsl(226, 100%, 90%);
+    $background-color: #333;
+    $nav-background-color: #444;
+} @else if $theme == 'dark-red' {
+    $text-color: #fff;
+    $primary-color: #ff4f4f;
+    $secondary-color: #7e4c5d;
+    $hover-link-color: hsl(0, 100%, 90%);
+    $background-color: #333;
+    $nav-background-color: #444;
+} @else if $theme == 'light-green' {
+    $text-color: #333;
+    $primary-color: #6CFF4F;
+    $secondary-color: #226600;
+    $hover-link-color: hsl(110, 100%, 20%);
+    $background-color: #fff;
+    $nav-background-color: rgb(232, 255, 233);
+} @else if $theme == 'light-blue' {
+    $text-color: #333;
+    $primary-color: #4fa1ff;
+    $secondary-color: #001e94;
+    $hover-link-color: hsl(226, 100%, 20%);
+    $nav-background-color: rgb(223, 249, 255);
+} @else if $theme == 'light-red' {
+    $text-color: #333;
+    $primary-color: #ff4f4f;
+    $secondary-color: hsl(0, 100%, 27%);
+    $hover-link-color: hsl(0, 100%, 20%);
+    $background-color: #fff;
+    $nav-background-color: rgb(255, 233, 233);
+} 
+
+
+
+$font-stack: 'Montserrat', sans-serif;
+
+body {
+    margin: 0;
+    font: 100% $font-stack;
+    color: $text-color;
+    background: $background-color;
+}
+
+.link {
+    transition: 0.4s;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.link:hover {
+    transition: 0.4s;
+    color: $hover-link-color;
+}

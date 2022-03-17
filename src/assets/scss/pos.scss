@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    height: 15%;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.horizontal-flex {
+    display: flex;
+    align-items: center;
+}
+
+.centred-elem {
+    justify-items: center;
+}

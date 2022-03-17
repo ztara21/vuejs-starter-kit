@@ -1,0 +1,64 @@
+@use 'base';
+
+.header {
+    background-color: base.$nav-background-color;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex-wrap: wrap;
+}
+
+.nav-title {
+    padding: 20px;
+    transition: color .2s;
+}
+
+.nav-title:hover {
+    color: base.$secondary-color;
+    transition: color .2s;
+    cursor: default;
+}
+
+#navbar {
+    margin-right: 20px;
+}
+
+.nav-li {
+    list-style-type: none;
+    padding: 20px;
+    margin: 15px;
+    background: base.$secondary-color;
+    border: base.$secondary-color solid 2px;
+    border-radius: 3px;
+
+    transition: .2s;
+}
+
+.nav-li:hover {
+    background: #444;
+    border: base.$secondary-color solid 2px;
+    border-radius: 3px;
+
+    transform: scale(1.2);
+
+    transition: .2s;
+}
+
+.nav-links {
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.big-title {
+    cursor: default;
+    
+    transition: .3s;
+}
+
+.big-title:hover {
+    transform: scale(1.1);
+
+    transition: .3s;
+}
