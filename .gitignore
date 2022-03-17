@@ -12,8 +12,6 @@ node_modules
 dist
 dist-ssr
 coverage
-package.json
-package-lock.json
 *.local
 
 /cypress/videos/
